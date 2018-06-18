@@ -1,6 +1,6 @@
 # Hound
 
-Website of the hard rock band Hound
+Website of the Hard Rock band Hound
 
 <!--## Deploy-->
 
