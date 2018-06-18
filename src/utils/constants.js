@@ -1,5 +1,10 @@
 import color from 'color';
 
+const api = {
+  base: 'https://hound.uber.space/cockpit/api/',
+  token: 'bd188c7f5bfed1d21f76ce54061cd8',
+};
+
 const colors = {
   primary: '#3B352E',
   text: '#262422',
@@ -11,4 +16,4 @@ const fontSizes = {
   small: '90%',
 };
 
-export { colors, fontSizes };
+export { api, colors, fontSizes };

@@ -9,7 +9,7 @@ import Header from '../components/Header';
 const Layout = ({ children, data }) => {
   const PageContainer = styled('div')`
     margin: 0 auto;
-    max-width: ${rhythm(22)};
+    max-width: ${rhythm(20)};
     padding: ${rhythm(2)} 1.25rem;
 
     @media (min-width: 768px) {

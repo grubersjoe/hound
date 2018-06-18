@@ -11,7 +11,7 @@ const SocialIcons = () => {
   const IconWrapper = styled('div')`
     display: flex;
     justify-content: center;
-    margin: 4rem 0;
+    margin-bottom: 3rem;
   `;
 
   const Link = styled('a')`

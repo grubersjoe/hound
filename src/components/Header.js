@@ -6,6 +6,7 @@ import logoSvg from '../images/logo.svg';
 
 const Header = () => {
   const Wrapper = styled('div')`
+    margin-bottom: 3rem;
     text-align: center;
   `;
 
