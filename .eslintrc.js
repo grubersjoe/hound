@@ -1,5 +1,9 @@
 module.exports = {
   extends: 'airbnb',
+  parser: 'babel-eslint',
+  env: {
+    browser: true
+  },
   'rules': {
     'import/prefer-default-export': [0],
     'import/no-extraneous-dependencies': [0],
@@ -10,6 +14,5 @@ module.exports = {
   },
   globals: {
     graphql: false,
-    fetch: false,
   },
 };
