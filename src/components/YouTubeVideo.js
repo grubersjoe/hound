@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import YouTube from 'react-youtube';
-import { getYouTubeId } from '../services/YouTubeService';
+import { getYouTubeId } from '../services/regionsService';
+import { getEvents } from '../services/collectionsService';
 
 class YouTubeVideo extends React.Component {
   state = {
@@ -9,9 +10,10 @@ class YouTubeVideo extends React.Component {
   };
 
   componentDidMount() {
+    getEvents().then(data => console.log(data));
     getYouTubeId()
-      .then(data => this.setState({
-        videoId: data.videoId
+      .then(videoId => this.setState({
+        videoId: videoId
       }));
   }
 
