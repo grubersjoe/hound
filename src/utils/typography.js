@@ -2,11 +2,10 @@ import Typography from 'typography';
 // eslint-disable-next-line
 import 'typeface-pt-sans';
 // eslint-disable-next-line
-import 'typeface-pt-sans-narrow';
-// eslint-disable-next-line
 import 'typeface-overpass-mono';
 
 import { colors } from './constants';
+import bgImage from '../images/bg.jpg';
 
 const theme = {
   title: 'Hound',
@@ -17,7 +16,7 @@ const theme = {
   bodyFontFamily: ['Overpass Mono', 'monospace'],
   bodyWeight: 400,
   blockMarginBottom: 0.85,
-  headerFontFamily: ['PT Sans', 'sans-serif'],
+  headerFontFamily: ['Overpass', 'sans-serif'],
   headerWeight: 600,
   scaleRatio: 1.618,
 };
@@ -27,6 +26,13 @@ theme.overrideThemeStyles = () => ({
   // See https://github.com/KyleAMathews/typography.js/issues/75
   // This is a very ugly workaround:
   '@media (max-width: 767px) { html { font-size: 16px } }': {},
+
+  html: {
+    background: `url(${bgImage}) center top no-repeat`,
+    backgroundSize: 'cover',
+    backgroundAttachment: 'fixed',
+    overflow: 'auto',
+  },
 
   'h1, h2, h3': {
     lineHeight: 1.3,

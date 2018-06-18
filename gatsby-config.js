@@ -6,9 +6,6 @@ module.exports = {
     siteUrl: 'https://hound-band.com',
   },
   plugins: [
-    'gatsby-plugin-offline',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-plugin-typography',
       options: {
@@ -24,5 +21,14 @@ module.exports = {
         anonymize: true,
       },
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        include: /images\/icons/,
+      },
+    },
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
   ],
 };
