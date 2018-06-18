@@ -1,34 +1,44 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import styled from 'styled-components';
+import { rhythm } from '../utils/typography';
 
 import Logo from '../components/Logo';
 
-const Layout = ({ children, data }) => (
-  <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Logo/>
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+const Layout = ({ children, data }) => {
+  const PageContainer = styled('div')`
+    margin: 0 auto;
+    max-width: ${rhythm(22)};
+    padding: ${rhythm(1.5)} 1.25rem;
+
+    @media (min-width: 768px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  `;
+
+  // TODO: add meaningful description
+  return (
+    <PageContainer>
+      <Helmet
+        title={data.site.siteMetadata.title}
+        htmlAttributes={{ lang: 'en' }}
+        meta={[
+          {
+            name: 'description',
+            content: 'Hound Hard Rock',
+          },
+        ]}
+      />
+      <Logo />
       {children()}
-    </div>
-  </div>
-);
+    </PageContainer>
+  );
+};
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func.isRequired,
 };
 
 export default Layout;
