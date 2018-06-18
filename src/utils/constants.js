@@ -1,7 +1,7 @@
 import color from 'color';
 
 const api = {
-  base: 'https://hound.uber.space/cockpit/api/',
+  base: 'https://hound.uber.space/cockpit/api',
   token: 'bd188c7f5bfed1d21f76ce54061cd8',
 };
 
