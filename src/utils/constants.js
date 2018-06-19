@@ -16,4 +16,6 @@ const fontSizes = {
   small: '90%',
 };
 
-export { api, colors, fontSizes };
+const blockMargin = '2.5rem';
+
+export { api, colors, fontSizes, blockMargin };

@@ -1,23 +1,21 @@
 import Typography from 'typography';
 // eslint-disable-next-line
-import 'typeface-pt-sans';
-// eslint-disable-next-line
-import 'typeface-overpass-mono';
+import 'typeface-overpass';
 
 import { colors } from './constants';
 import bgImage from '../images/bg.jpg';
 
 const theme = {
   title: 'Hound',
-  baseFontSize: '16px',
+  baseFontSize: '18px',
   baseLineHeight: 1.5,
   boldWeight: 700,
   bodyColor: colors.text,
-  bodyFontFamily: ['Overpass Mono', 'monospace'],
+  bodyFontFamily: ['Overpass', 'monospace'],
   bodyWeight: 400,
   blockMarginBottom: 0.85,
   headerFontFamily: ['Overpass', 'sans-serif'],
-  headerWeight: 600,
+  headerWeight: 700,
   scaleRatio: 1.618,
 };
 
@@ -42,12 +40,16 @@ theme.overrideThemeStyles = () => ({
     color: 'inherit',
   },
 
+  h2: {
+    marginBottom: '0.75rem',
+  },
+
   small: {
     fontSize: '90%',
   },
 
   li: {
-    marginBottom: '0.5rem',
+    marginBottom: '0.25rem',
   },
 });
 

@@ -1,26 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-// eslint-disable-next-line
-import 'typeface-pt-sans-narrow';
+import { rhythm } from '../utils/typography';
+import { blockMargin } from '../utils/constants';
 import logoSvg from '../images/logo.svg';
 
 const Header = () => {
   const Wrapper = styled('div')`
-    margin-bottom: 3rem;
+    margin-bottom: ${blockMargin};
     text-align: center;
   `;
 
   const Logo = styled('img')`
     display: block;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto ${rhythm(1)} auto;
     width: 360px;
   `;
 
   const Title = styled('div')`
-    font-family: 'PT Sans Narrow', sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: 800;    
+    font-size: 20px;
   `;
 
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../utils/constants';
+import { blockMargin, colors } from '../utils/constants';
 import IconFacebook from '../images/icons/icon-facebook.svg';
 import IconYouTube from '../images/icons/icon-youtube.svg';
 import IconBandcamp from '../images/icons/icon-bandcamp.svg';
@@ -11,7 +11,7 @@ const SocialIcons = () => {
   const IconWrapper = styled('div')`
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: ${blockMargin};
   `;
 
   const Link = styled('a')`

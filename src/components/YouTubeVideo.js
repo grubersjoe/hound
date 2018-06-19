@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import YouTube from 'react-youtube';
+import { rhythm } from '../utils/typography';
+import { blockMargin } from '../utils/constants';
 import { getYouTubeId } from '../services/regions';
 
 class YouTubeVideo extends React.Component {
@@ -15,8 +17,7 @@ class YouTubeVideo extends React.Component {
 
   render() {
     const StyledYouTube = styled(YouTube)`
-      margin-bottom: 3rem;
-      border-radius: 0.25rem;
+      margin-bottom: ${blockMargin};
     `;
 
     return (
@@ -24,7 +25,7 @@ class YouTubeVideo extends React.Component {
         videoId={this.state.videoId}
         opts={{
           width: 480,
-          height: 321,
+          height: 720 * (480 / 1076),
           playerVars: {
             modestbranding: 1,
             rel: 0,
