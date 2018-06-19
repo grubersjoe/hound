@@ -35,6 +35,7 @@ class YouTubeVideo extends React.Component {
       border-radius: 0.25rem;
     `;
 
+    // FIXME: fix static origin
     return (
       <ResponsiveWrapper>
         <StyledYouTube
@@ -42,7 +43,7 @@ class YouTubeVideo extends React.Component {
           opts={{
             playerVars: {
               color: 'white',
-              origin: window.location.origin,
+              origin: 'https://hound.uber.space',
               rel: 0,
               showinfo: 0,
             },
