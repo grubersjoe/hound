@@ -6,6 +6,7 @@ export const api = {
 export const colors = {
   primary: '#3B352E',
   text: '#262422',
+  bg: '#ccb9a8',
 };
 
 export const fontSizes = {

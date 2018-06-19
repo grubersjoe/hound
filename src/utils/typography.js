@@ -26,7 +26,7 @@ theme.overrideThemeStyles = () => ({
   '@media (max-width: 767px) { html { font-size: 16px } }': {},
 
   html: {
-    background: `url(${bgImage}) center top no-repeat`,
+    background: `url(${bgImage}) center top no-repeat ${colors.bg}`,
     backgroundSize: 'cover',
     backgroundAttachment: 'fixed',
     overflow: 'auto',
