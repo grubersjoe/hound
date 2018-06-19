@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import YouTube from 'react-youtube';
-import { rhythm } from '../utils/typography';
 import { blockMargin } from '../utils/constants';
 import { getYouTubeId } from '../services/regions';
 
@@ -16,23 +15,40 @@ class YouTubeVideo extends React.Component {
   }
 
   render() {
-    const StyledYouTube = styled(YouTube)`
+    const video = { width: 1614, height: 1080 };
+
+    // see https://github.com/troybetz/react-youtube/issues/118
+    const ResponsiveWrapper = styled.div`
+      position: relative;
+      height: 0;
+      padding-bottom: ${(video.height / video.width) * 100}%;
+      overflow: hidden;
       margin-bottom: ${blockMargin};
     `;
 
+    const StyledYouTube = styled(YouTube)`
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.25rem;
+    `;
+
     return (
-      <StyledYouTube
-        videoId={this.state.videoId}
-        opts={{
-          width: 480,
-          height: 720 * (480 / 1076),
-          playerVars: {
-            modestbranding: 1,
-            rel: 0,
-            showinfo: 0,
-          },
-        }}
-      />
+      <ResponsiveWrapper>
+        <StyledYouTube
+          videoId={this.state.videoId}
+          opts={{
+            playerVars: {
+              color: 'white',
+              origin: window.location.origin,
+              rel: 0,
+              showinfo: 0,
+            },
+          }}
+        />
+      </ResponsiveWrapper>
     );
   }
 }
