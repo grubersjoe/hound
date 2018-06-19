@@ -15,19 +15,31 @@ const SocialIcons = () => {
   `;
 
   const Link = styled('a')`
-    margin: 0 0.6rem;
-    transition: transform 0.2s ease-in-out;
+    margin: 0 0.4rem;
     
-    &:hover {
-      transform: scale(1.04);
+    svg {
+      width: 46px;
     }
     
-    path {
-      transition: fill 0.2s ease-in-out;
-    }
+    @media (min-width: 768px) {
+      margin: 0 0.6rem;
     
-    &:hover path:first-of-type {
-      fill: ${colors.primary};
+      svg {
+        width: 54px;
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      svg:hover {
+        transform: scale(1.04);
+      }
+      
+      path {
+        transition: fill 0.2s ease-in-out;
+      }
+      
+      &:hover path:first-of-type {
+        fill: ${colors.primary};
+      }
     }
   `;
 
