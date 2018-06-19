@@ -13,13 +13,21 @@ const Header = () => {
   const Logo = styled('img')`
     display: block;
     margin: 0 auto ${rhythm(1)} auto;
-    width: 360px;
+    width: 320px;
+    
+    @media (min-width: 768px) {
+      width: 360px;
+    }
   `;
 
   const Title = styled('div')`
     text-transform: uppercase;
-    font-weight: 800;    
-    font-size: 20px;
+    font-weight: 800; 
+    font-size: 16px;   
+    
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
   `;
 
   return (
