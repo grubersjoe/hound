@@ -1,7 +1,7 @@
 import Typography from 'typography';
 // eslint-disable-next-line
 import 'typeface-overpass';
-
+import color from 'color';
 import { colors } from './constants';
 import bgImage from '../images/bg.jpg';
 
@@ -44,12 +44,37 @@ theme.overrideThemeStyles = () => ({
     marginBottom: '0.75rem',
   },
 
+  a: {
+    color: colors.text,
+    textDecoration: 'none',
+  },
+
+  'td a': {
+    padding: '0.25rem 0.4rem',
+    borderRadius: '0.2rem',
+    backgroundColor: color(colors.secondary).fade(0.9).string(),
+    transition: '0.2s background-color ease-in-out',
+  },
+
+  'td a:hover': {
+    backgroundColor: color(colors.secondary).fade(0.85).string(),
+  },
+
   small: {
     fontSize: '90%',
   },
 
   li: {
     marginBottom: '0.25rem',
+  },
+
+  tr: {
+    verticalAlign: 'top',
+  },
+
+  td: {
+    borderBottom: 'none',
+    padding: '0.3rem 0.5rem',
   },
 });
 
