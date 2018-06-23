@@ -32,7 +32,10 @@ class EventList extends React.Component {
         <tbody>
           {
             this.state.events.map((event) => {
-              const eventDate = dayjs(`${event.date} ${event.time}`);
+              // Safari has problems to parse `${event.date} ${event.time}` directly
+              const time = event.time.split(':');
+              const eventDate = dayjs(event.date).set('hour', time[0]).set('minute', time[1]);
+
               const eventName = event.link ? (
                 <a
                   href={event.link}
