@@ -49,17 +49,6 @@ theme.overrideThemeStyles = () => ({
     textDecoration: 'none',
   },
 
-  'td a': {
-    padding: '0.25rem 0.4rem',
-    borderRadius: '0.2rem',
-    backgroundColor: color(colors.secondary).fade(0.9).string(),
-    transition: '0.2s background-color ease-in-out',
-  },
-
-  'td a:hover': {
-    backgroundColor: color(colors.secondary).fade(0.85).string(),
-  },
-
   small: {
     fontSize: '90%',
   },
