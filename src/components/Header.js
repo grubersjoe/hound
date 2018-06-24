@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'gatsby-link';
 import { rhythm } from '../utils/typography';
 import { blockMargin } from '../utils/constants';
 import logoSvg from '../images/logo.svg';
 
 const Header = () => {
-  const Wrapper = styled('div')`
+  const Wrapper = styled('header')`
     margin-bottom: ${blockMargin};
     text-align: center;
   `;
@@ -32,7 +33,9 @@ const Header = () => {
 
   return (
     <Wrapper>
-      <Logo src={logoSvg} alt="Hound Hard" />
+      <Link to="/">
+        <Logo src={logoSvg} alt="Hound Hard" />
+      </Link>
       <Title>Powered by Metalville / fd</Title>
     </Wrapper>
   );
