@@ -12,9 +12,6 @@ const IndexPage = () => (
 
       <h2>Upcoming Gigs</h2>
       <EventList type="future" />
-
-      <h2>Past Gigs</h2>
-      <EventList type="past" />
     </main>
     <Footer />
   </div>

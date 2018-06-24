@@ -36,7 +36,7 @@ const Header = () => {
       <Link to="/">
         <Logo src={logoSvg} alt="Hound Hard" />
       </Link>
-      <Title>Powered by Metalville / fd</Title>
+      <Title>Hard Rock Music</Title>
     </Wrapper>
   );
 };

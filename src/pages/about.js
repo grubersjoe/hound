@@ -9,9 +9,9 @@ const AboutPage = () => (
 
     <h3>Liable according to § 5 TMG</h3>
     <p>
-      Max Mustermann<br />
-      Musterstraße 9<br />
-      04107 Leipzig
+      Wanja Neite / Hound<br />
+      Vogelweide 18a<br />
+      31137 Hildesheim
     </p>
 
     <h3>Contact</h3>
