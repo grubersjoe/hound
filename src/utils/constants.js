@@ -4,9 +4,9 @@ export const api = {
 };
 
 export const colors = {
-  primary: '#3B352E',
-  text: '#262422',
-  bg: '#ccb9a8',
+  primary: 'hsl(32, 12%, 21%)',
+  text: 'hsl(30, 6%, 12%)',
+  bg: 'hsl(28, 26%, 73%)',
 };
 
 export const fontSizes = {
