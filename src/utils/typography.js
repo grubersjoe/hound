@@ -41,7 +41,7 @@ theme.overrideThemeStyles = () => ({
   },
 
   h2: {
-    marginBottom: '0.75rem',
+    marginBottom: '0.5rem',
   },
 
   a: {
