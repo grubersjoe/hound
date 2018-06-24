@@ -4,12 +4,14 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import color from 'color';
 import dayjs from 'dayjs';
+
 import { getEvents, getFutureEvents, getPastEvents } from '../services/events';
-import { colors, dateFormat, timeFormat } from '../utils/constants';
+import { blockMargin, colors, dateFormat, timeFormat } from '../utils/constants';
+import Spinner from './Spinner';
 
 class EventList extends React.Component {
   state = {
-    events: [],
+    events: null,
   };
 
   componentDidMount() {
@@ -24,11 +26,13 @@ class EventList extends React.Component {
   }
 
   render() {
+    const { events } = this.state;
+
     const Table = styled.table`
       margin: 0 0 2rem 0;
     `;
 
-    const BubbleLink = styled.a`
+    const EventLink = styled.a`
       border-bottom: 1px solid ${colors.primary};
       
       @media (min-width: 768px) {
@@ -44,24 +48,24 @@ class EventList extends React.Component {
       }      
     `;
 
-    return (
+    const eventsTable = (
       <Table>
         <tbody>
           {
-            this.state.events.map((event) => {
+            events && events.map((event) => {
               // Safari has problems to parse `${event.date} ${event.time}` directly
               const time = event.time.split(':');
               const eventDate = dayjs(event.date).set('hour', time[0]).set('minute', time[1]);
 
               const eventName = event.link ? (
-                <BubbleLink
+                <EventLink
                   href={event.link}
                   target="_blank"
                   rel="noreferrer noopener"
                   title="External link to event"
                 >
                   {event.name}
-                </BubbleLink>
+                </EventLink>
               ) : event.name;
 
               return (
@@ -76,6 +80,18 @@ class EventList extends React.Component {
         </tbody>
       </Table>
     );
+
+    const noEventsMsg = (
+      <p style={{ marginBottom: blockMargin }}>Unfortunately no Gigs are planned right now :(</p>
+    );
+
+    if (events === null) {
+      return <Spinner />;
+    } else if (events.length === 0) {
+      return noEventsMsg;
+    }
+
+    return eventsTable;
   }
 }
 
