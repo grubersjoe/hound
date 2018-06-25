@@ -17,7 +17,6 @@ const Layout = ({ children, data }) => {
     }
   `;
 
-  // TODO: add meaningful description
   return (
     <PageContainer>
       <Helmet
