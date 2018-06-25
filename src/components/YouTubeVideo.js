@@ -43,7 +43,6 @@ class YouTubeVideo extends React.Component {
           opts={{
             playerVars: {
               color: 'white',
-              origin: 'https://hound.uber.space',
               rel: 0,
               showinfo: 0,
             },
