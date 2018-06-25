@@ -16,7 +16,7 @@ const AboutPage = () => (
 
     <h3>Contact</h3>
     <p>
-      <a href="mailto:hi@hound-band.com">hi@hound-band.com</a>
+      <a href="mailto:kontakt@hound-band.com">kontakt@hound-band.com</a>
     </p>
 
     <p>

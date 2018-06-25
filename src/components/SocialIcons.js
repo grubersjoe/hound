@@ -53,19 +53,33 @@ const SocialIcons = () => {
         <IconFacebook />
       </Link>
 
-      <Link href="https://www.youtube.com/channel/UCjo4kHe2v7mC1PBrECzL32w" target="_blank" rel="noopener noreferrer">
+      <Link
+        href="https://www.youtube.com/channel/UCjo4kHe2v7mC1PBrECzL32w"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <IconYouTube />
       </Link>
 
-      <Link href="https://hound-hardrock.bandcamp.com/" target="_blank" rel="noopener noreferrer">
+      <Link
+        href="https://hound-hardrock.bandcamp.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <IconBandcamp />
       </Link>
 
-      <Link href="https://soundcloud.com/hound-150658848" target="_blank" rel="noopener noreferrer">
+      <Link
+        href="https://soundcloud.com/hound-150658848"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <IconSoundcloud />
       </Link>
 
-      <Link href="mailto:hi@hound-band.com">
+      <Link
+        href="mailto:kontakt@hound-band.com"
+      >
         <IconMail />
       </Link>
     </IconWrapper>
