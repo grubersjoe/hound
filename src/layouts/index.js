@@ -26,7 +26,7 @@ const Layout = ({ children, data }) => {
         meta={[
           {
             name: 'description',
-            content: 'Hound Hard Rock',
+            content: data.site.siteMetadata.description,
           },
         ]}
       />
@@ -38,6 +38,7 @@ const Layout = ({ children, data }) => {
 
 Layout.propTypes = {
   children: PropTypes.func.isRequired,
+  data: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 
 export default Layout;
@@ -47,6 +48,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
   }
