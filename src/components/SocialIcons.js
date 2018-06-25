@@ -47,6 +47,7 @@ const SocialIcons = () => {
     <IconWrapper>
       <Link
         href="https://www.facebook.com/hound.hardrock"
+        title="Facebook"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -55,6 +56,7 @@ const SocialIcons = () => {
 
       <Link
         href="https://www.youtube.com/channel/UCjo4kHe2v7mC1PBrECzL32w"
+        title="YouTube"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -63,6 +65,7 @@ const SocialIcons = () => {
 
       <Link
         href="https://hound-hardrock.bandcamp.com/"
+        title="Bandcamp"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -71,6 +74,7 @@ const SocialIcons = () => {
 
       <Link
         href="https://soundcloud.com/hound-150658848"
+        title="SoundCloud"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -79,6 +83,7 @@ const SocialIcons = () => {
 
       <Link
         href="mailto:kontakt@hound-band.com"
+        title="Email"
       >
         <IconMail />
       </Link>
