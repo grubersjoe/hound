@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Hound – Hard Rock',
+    title: 'Hound – Hard Rock Music',
     author: 'Jonathan Gruber',
-    description: 'Website of the Hard Rock band Hound',
-    siteUrl: 'https://hound-band.com',
+    description: 'Website of Hound - Hard Rock Music',
+    siteUrl: 'https://houndband.com',
   },
   plugins: [
     {
@@ -12,15 +12,15 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
-    {
-      // TODO: activate
-      // TODO: <a href="javascript:gaOptout();">Deactive Google Analytics</a>
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: '',
-        anonymize: true,
-      },
-    },
+    // {
+    //   // TODO: activate
+    //   // TODO: <a href="javascript:gaOptout();">Deactive Google Analytics</a>
+    //   resolve: 'gatsby-plugin-google-analytics',
+    //   options: {
+    //     trackingId: '',
+    //     anonymize: true,
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
