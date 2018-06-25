@@ -10,7 +10,7 @@ const theme = {
   baseLineHeight: 1.4,
   boldWeight: 700,
   bodyColor: colors.text,
-  bodyFontFamily: ['Overpass', 'monospace'],
+  bodyFontFamily: ['Overpass', 'sans-serif'],
   bodyWeight: 400,
   blockMarginBottom: 0.85,
   headerFontFamily: ['Overpass', 'sans-serif'],
