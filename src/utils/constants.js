@@ -1,6 +1,6 @@
 export const api = {
-  base: 'https://hound.uber.space/cockpit/api',
-  token: 'bd188c7f5bfed1d21f76ce54061cd8',
+  base: 'https://houndband.com/cockpit/api',
+  token: 'cc1ee64fb34bc35ddb1b3c4d4f0510',
 };
 
 export const colors = {
