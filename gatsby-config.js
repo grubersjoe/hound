@@ -12,15 +12,14 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
-    // {
-    //   // TODO: activate
-    //   // TODO: <a href="javascript:gaOptout();">Deactive Google Analytics</a>
-    //   resolve: 'gatsby-plugin-google-analytics',
-    //   options: {
-    //     trackingId: '',
-    //     anonymize: true,
-    //   },
-    // },
+    {
+      // TODO: <a href="javascript:gaOptout();">Deactive Google Analytics</a>
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-121704055-1',
+        anonymize: true,
+      },
+    },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
