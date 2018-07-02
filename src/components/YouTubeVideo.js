@@ -15,7 +15,7 @@ class YouTubeVideo extends React.Component {
   }
 
   render() {
-    const video = { width: 1614, height: 1080 };
+    const video = { width: 1280, height: 720 }; // 16:9 YouTube default
 
     // see https://github.com/troybetz/react-youtube/issues/118
     const ResponsiveWrapper = styled.div`
