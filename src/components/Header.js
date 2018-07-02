@@ -24,10 +24,11 @@ const Header = () => {
   const Title = styled('div')`
     text-transform: uppercase;
     font-weight: 800; 
-    font-size: 16px;   
+    font-size: 16px;
+    line-height: 1.5;   
     
     @media (min-width: 768px) {
-      font-size: 20px;
+      font-size: 18px;
     }
   `;
 
@@ -36,7 +37,16 @@ const Header = () => {
       <Link to="/">
         <Logo src={logoSvg} alt="Hound Hard" />
       </Link>
-      <Title>Hard Rock Music</Title>
+      <Title>
+        { /* Hard Rock Music< */ }
+        <a
+          href="https://www.grooves.land/hound-settle-your-scores-metalville-pZZa1-2098237127.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Brand new album ‘Settle <br />Your Scores’ now available
+        </a>
+      </Title>
     </Wrapper>
   );
 };
