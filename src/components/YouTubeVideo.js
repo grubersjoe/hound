@@ -35,7 +35,6 @@ class YouTubeVideo extends React.Component {
       border-radius: 0.25rem;
     `;
 
-    // FIXME: fix static origin
     return (
       <ResponsiveWrapper>
         <StyledYouTube
