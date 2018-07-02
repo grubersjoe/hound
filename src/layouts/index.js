@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import { rhythm } from '../utils/typography';
 
+import Seo from '../components/Seo';
 import Header from '../components/Header';
 
 const Layout = ({ children, data }) => {
@@ -19,16 +19,7 @@ const Layout = ({ children, data }) => {
 
   return (
     <PageContainer>
-      <Helmet
-        title={data.site.siteMetadata.title}
-        htmlAttributes={{ lang: 'en' }}
-        meta={[
-          {
-            name: 'description',
-            content: data.site.siteMetadata.description,
-          },
-        ]}
-      />
+      <Seo siteMetadata={data.site.siteMetadata} />
       <Header />
       {children()}
     </PageContainer>

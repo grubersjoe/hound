@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Hound – Hard Rock Music',
     author: 'Jonathan Gruber',
-    description: 'Website of Hound - Hard Rock Music',
+    description: 'Official Website of Hound - Hard Rock Music',
     siteUrl: 'https://houndband.com',
   },
   plugins: [
