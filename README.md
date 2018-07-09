@@ -1,7 +1,7 @@
 # Hound
 
-Website of the Hard Rock band Hound
+Website of the Hard Rock band Hound. Based on [Gatsby JS](https://www.gatsbyjs.org/).
 
-<!--## Deploy-->
+### [houndband.com](https://houndband.com)
 
-<!--[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)-->
+<img src="preview.jpg" width="100%" title="Screenshot" alt="Screenshot">
